@@ -1,0 +1,2 @@
+numbers = [10, 25, 47, 3, 99, 56] 
+print("The largest number is:", max(numbers))
