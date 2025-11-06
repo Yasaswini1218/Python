@@ -1,0 +1,17 @@
+import numpy as np # Create an example array arr = np.array([3, 7, 1, 9, 7, 2, 9, 5, 3]) print("Original Array:", arr) 
+# (a) Extract all numbers less than 5 and greater than 5 less_than_5 = arr[arr < 5] greater_than_5 = arr[arr > 5] 
+Numbers less than 5: [3 1 2 3] 
+Numbers greater than 5: [7 9 7 9] print("\nNumbers less than 5:", less_than_5) print("Numbers greater than 5:", greater_than_5) Maximum Value: 9 at Index: 3 
+Minimum Value: 1 at Index: 2 
+# (b) Find the indices of max and min numbers along the given axis 
+max_value = np.max(arr) min_value = np.min(arr) 
+max_index = np.argmax(arr)  # index of first maximum min_index = np.argmin(arr)  # index of first minimum print("\nMaximum Value:", max_value, "at Index:", max_index) 
+print("Minimum Value:", min_value, "at Index:", min_index) 
+# Extra usage of other methods print("\nUnique values:", np.unique(arr)) 
+print("Count of each element:", np.bincount(arr))  # works only with non-negative integers 
+print("Representation of array (repr):", repr(arr)) 
+Unique values: [1 2 3 5 7 9] 
+Count of each element: [0 1 1 2 0 1 0 2 0 2] 
+Representation of array (repr): array([3, 7, 1, 9, 7, 2, 9, 5, 3]) 
+  Output 
+Original Array: [3 7 1 9 7 2 9 5 3] 
